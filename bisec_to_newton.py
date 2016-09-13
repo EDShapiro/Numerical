@@ -17,13 +17,13 @@ def df(x):
 	return myfunction.deriv(x) #define secret fucntions derivative as df(x)
 
 
-def bisect_to_newton(a,b,tolbis,tolnew): #define our root finding fucntion
+def bisect_to_newton(a,b,tolb,toln): #define our root finding fucntion
 
     toll = float(1)
 #while count < 25:
     Iter = 1
     fa = myfunction.eval(a)
-    while toll > tolbis: # start bysection method
+    while toll > tolb: # start bysection method
         c = (a+b)/2
         f = myfunction.eval(c) # Evaluate to see if inital guess is correct
         if f == 0:
@@ -41,7 +41,7 @@ def bisect_to_newton(a,b,tolbis,tolnew): #define our root finding fucntion
     Iter = Iter+1
     return c
     return toll
-    while toll > tolnew: # now lets use Newtons Method.
+    while toll > toln: # now lets use Newtons Method.
         a = f(c)
         b = df(c)
         c = c - a/b
