@@ -39,8 +39,8 @@ def bisectnewton(a,b,tolbis,tolnew):
         tolerance = abs(a)
     count = count+1
     return a
-    print("The root is:")
+bisectnewton(-100,100,10**-3,10**-5)
+print("The root is:")
     print(c)
     print("Secret function evaluated at the root is:")
     print(a)
-bisectnewton(-100,100,10**-3,10**-5)
