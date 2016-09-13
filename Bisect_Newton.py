@@ -41,6 +41,6 @@ def bisectnewton(a,b,tolbis,tolnew):
     return a
 bisectnewton(-100,100,10**-3,10**-5)
 print("The root is:")
-    print(c)
-    print("Secret function evaluated at the root is:")
-    print(a)
+print(c)
+print("Secret function evaluated at the root is:")
+print(a)
